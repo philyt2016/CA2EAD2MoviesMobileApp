@@ -57,6 +57,29 @@ namespace MoviesActorsAPI.Controllers
             return Ok(movie);
         }
 
+        //GET: api/Movies/Action
+        [HttpGet("{Genre}")]
+        public IActionResult GetMovieByGenre([FromRoute] string Genre)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+
+            var movies = from m in _context.Movie
+                         select m;
+
+            movies = movies.Where(x => x.Genre == Genre);
+
+            if (movies == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(movies);
+        }
+
         // PUT: api/Movies/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutMovie([FromRoute] string id, [FromBody] Movie movie)
