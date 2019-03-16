@@ -55,6 +55,38 @@ namespace MoviesActorsAPI.Data
                     },
                     new Movie()
                     {
+                        Name = "Goodfellas",
+                        ReleaseYear = 1990,
+                        Genre = "Drama",
+                        Stars = 5,
+                        Runtime = 148
+                    },
+                    new Movie()
+                    {
+                        Name = "Avengers: Infinity War",
+                        ReleaseYear = 2018,
+                        Genre = "Action",
+                        Stars = 5,
+                        Runtime = 149
+                    },
+                    new Movie()
+                    {
+                        Name = "The Room",
+                        ReleaseYear = 2003,
+                        Genre = "Drama",
+                        Stars = 1,
+                        Runtime = 109
+                    },
+                    new Movie()
+                    {
+                        Name = "Alien",
+                        ReleaseYear = 1997,
+                        Genre = "Horror",
+                        Stars = 4,
+                        Runtime = 195
+                    },
+                    new Movie()
+                    {
                         Name = "John Carter",
                         ReleaseYear = 2012,
                         Genre = "Fantasy",
