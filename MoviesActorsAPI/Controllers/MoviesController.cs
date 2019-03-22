@@ -68,9 +68,8 @@ namespace MoviesActorsAPI.Controllers
 
 
             var movies = from m in _context.Movie
+                         where m.Genre == Genre
                          select m;
-
-            movies = movies.Where(x => x.Genre == Genre);
 
             if (movies == null)
             {
