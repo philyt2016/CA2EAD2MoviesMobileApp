@@ -60,6 +60,19 @@ namespace MoviesActorsAPI.Controllers
             return Ok(entries);
         }
 
+        [HttpGet("year_released/{ReleaseYear:int}")]
+        public IActionResult GetMovieByReleaseYear(int ReleaseYear)
+        {
+            // LINQ query, find matching entries for num of stars
+            var entries = _context.Movie.Where(r => r.ReleaseYear == ReleaseYear);
+
+            if (entries == null)
+            {
+                return NotFound();
+            }
+            return Ok(entries);
+        }
+
 
 
         private bool MovieExists(string id)
