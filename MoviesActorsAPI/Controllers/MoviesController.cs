@@ -23,132 +23,44 @@ namespace MoviesActorsAPI.Controllers
             _context = context;
         }
 
-        [HttpGet("all")]
         // GET api/movies/all
+        [HttpGet("all")]        
         public IEnumerable<Movie> GetAllEntries()
         {
             var entries = _context.Movie.OrderBy(e => e.Name);
             return entries;
         }
 
-        // GET: api/Movies
-        [HttpGet]
-        public IEnumerable<Movie> GetMovie()
+        
+
+        //GET: api/movies/genre/eg. action
+        [HttpGet("genre/{Genre}")]
+        public IActionResult GetMovieByGenre(String Genre)
         {
-            return _context.Movie;
-        }
+            // LINQ query, find matching entries for genre
+            var entries = _context.Movie.Where(r => r.Genre.ToUpper() == Genre.ToUpper());
 
-        // GET: api/Movies/5
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetMovie([FromRoute] string id)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            var movie = await _context.Movie.FindAsync(id);
-
-            if (movie == null)
+            if (entries == null)
             {
                 return NotFound();
             }
-
-            return Ok(movie);
+            return Ok(entries);
         }
 
-        //GET: api/Movies/Action
-        [HttpGet("{Genre}")]
-        public IActionResult GetMovieByGenre([FromRoute] string Genre)
+        [HttpGet("stars/{Stars:int}")]
+        public IActionResult GetMovieByStars(int Stars)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+            // LINQ query, find matching entries for num of stars
+            var entries = _context.Movie.Where(r => r.Stars == Stars);
 
-
-            var movies = from m in _context.Movie
-                         where m.Genre == Genre
-                         select m;
-
-            if (movies == null)
+            if (entries == null)
             {
                 return NotFound();
             }
-
-            return Ok(movies);
+            return Ok(entries);
         }
 
-        // PUT: api/Movies/5
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutMovie([FromRoute] string id, [FromBody] Movie movie)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
 
-            if (id != movie.Name)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(movie).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!MovieExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
-
-        // POST: api/Movies
-        [HttpPost]
-        public async Task<IActionResult> PostMovie([FromBody] Movie movie)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            _context.Movie.Add(movie);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetMovie", new { id = movie.Name }, movie);
-        }
-
-        // DELETE: api/Movies/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteMovie([FromRoute] string id)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            var movie = await _context.Movie.FindAsync(id);
-            if (movie == null)
-            {
-                return NotFound();
-            }
-
-            _context.Movie.Remove(movie);
-            await _context.SaveChangesAsync();
-
-            return Ok(movie);
-        }
 
         private bool MovieExists(string id)
         {

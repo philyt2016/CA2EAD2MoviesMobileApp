@@ -14,7 +14,7 @@ namespace MoviesActorsAPI
         [Required]
         public int ReleaseYear { get; set; }
 
-        [Required]
+        [Required]        
         public string Genre { get; set; }
 
         [Required]

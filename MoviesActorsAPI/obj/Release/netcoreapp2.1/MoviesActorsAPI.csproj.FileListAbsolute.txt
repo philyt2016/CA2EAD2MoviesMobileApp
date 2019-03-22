@@ -1,0 +1,15 @@
+C:\Users\phily\Source\Repos\CA2EAD2MoviesMobileApp4\MoviesActorsAPI\bin\Release\netcoreapp2.1\MoviesActorsAPI.deps.json
+C:\Users\phily\Source\Repos\CA2EAD2MoviesMobileApp4\MoviesActorsAPI\bin\Release\netcoreapp2.1\MoviesActorsAPI.runtimeconfig.json
+C:\Users\phily\Source\Repos\CA2EAD2MoviesMobileApp4\MoviesActorsAPI\bin\Release\netcoreapp2.1\MoviesActorsAPI.runtimeconfig.dev.json
+C:\Users\phily\Source\Repos\CA2EAD2MoviesMobileApp4\MoviesActorsAPI\bin\Release\netcoreapp2.1\MoviesActorsAPI.dll
+C:\Users\phily\Source\Repos\CA2EAD2MoviesMobileApp4\MoviesActorsAPI\bin\Release\netcoreapp2.1\MoviesActorsAPI.pdb
+C:\Users\phily\Source\Repos\CA2EAD2MoviesMobileApp4\MoviesActorsAPI\obj\Release\netcoreapp2.1\MoviesActorsAPI.csprojAssemblyReference.cache
+C:\Users\phily\Source\Repos\CA2EAD2MoviesMobileApp4\MoviesActorsAPI\obj\Release\netcoreapp2.1\MoviesActorsAPI.csproj.CoreCompileInputs.cache
+C:\Users\phily\Source\Repos\CA2EAD2MoviesMobileApp4\MoviesActorsAPI\obj\Release\netcoreapp2.1\MoviesActorsAPI.RazorAssemblyInfo.cache
+C:\Users\phily\Source\Repos\CA2EAD2MoviesMobileApp4\MoviesActorsAPI\obj\Release\netcoreapp2.1\MoviesActorsAPI.RazorAssemblyInfo.cs
+C:\Users\phily\Source\Repos\CA2EAD2MoviesMobileApp4\MoviesActorsAPI\obj\Release\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\phily\Source\Repos\CA2EAD2MoviesMobileApp4\MoviesActorsAPI\obj\Release\netcoreapp2.1\MoviesActorsAPI.AssemblyInfoInputs.cache
+C:\Users\phily\Source\Repos\CA2EAD2MoviesMobileApp4\MoviesActorsAPI\obj\Release\netcoreapp2.1\MoviesActorsAPI.AssemblyInfo.cs
+C:\Users\phily\Source\Repos\CA2EAD2MoviesMobileApp4\MoviesActorsAPI\obj\Release\netcoreapp2.1\MoviesActorsAPI.RazorTargetAssemblyInfo.cache
+C:\Users\phily\Source\Repos\CA2EAD2MoviesMobileApp4\MoviesActorsAPI\obj\Release\netcoreapp2.1\MoviesActorsAPI.dll
+C:\Users\phily\Source\Repos\CA2EAD2MoviesMobileApp4\MoviesActorsAPI\obj\Release\netcoreapp2.1\MoviesActorsAPI.pdb
