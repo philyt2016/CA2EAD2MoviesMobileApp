@@ -22,5 +22,10 @@ namespace MoviesActorsAPI
 
         [Required]
         public int Runtime { get; set; }
+
+        public string CoverUrl { get; set; }
+
+        public string TrailerUrl { get; set; }
+
     }
 }

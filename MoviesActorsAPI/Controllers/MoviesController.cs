@@ -118,7 +118,7 @@ namespace MoviesActorsAPI.Controllers
         [ProducesResponseType(400)]             // bad request
         public IActionResult PostAddEntry([FromBody] Movie movie)
         {
-            if (ModelState.IsValid)                                             // model class validation ok?
+            if (ModelState.IsValid)                                            
             {
                 // check for duplicate
                 // LINQ query - get record
@@ -126,7 +126,7 @@ namespace MoviesActorsAPI.Controllers
                 if (record == null)
                 {
                     _context.Movie.Add(movie);
-                    _context.SaveChanges();                                           // commit
+                    _context.SaveChanges();                                           
 
                     // create http response with Created status code and listing serialised as content and Location header set to URI for new resource
                     return CreatedAtRoute("GetMovieByName", new { name = movie.Name }, movie);
@@ -141,6 +141,7 @@ namespace MoviesActorsAPI.Controllers
                 return BadRequest(ModelState);        // 400
             }
         }
+
 
         //test
         private bool MovieExists(string id)

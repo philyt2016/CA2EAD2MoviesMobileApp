@@ -31,3 +31,25 @@ END;
 
 GO
 
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20190322201249_Second')
+BEGIN
+    ALTER TABLE [Movie] ADD [CoverUrl] nvarchar(max) NULL;
+END;
+
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20190322201249_Second')
+BEGIN
+    ALTER TABLE [Movie] ADD [TrailerUrl] nvarchar(max) NULL;
+END;
+
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20190322201249_Second')
+BEGIN
+    INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+    VALUES (N'20190322201249_Second', N'2.1.4-rtm-31024');
+END;
+
+GO
+
