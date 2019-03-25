@@ -88,6 +88,32 @@ namespace MoviesActorsAPI.Controllers
             return Ok(entries);
         }
 
+        [HttpGet("runtime/less/{runtime:int}")]
+        public IActionResult GetMovieByRuntimeLessThan(int runtime)
+        {
+            // LINQ query, find matching entries for num of stars
+            var entries = _context.Movie.Where(r => r.Runtime <= runtime);
+
+            if (entries == null)
+            {
+                return NotFound();
+            }
+            return Ok(entries);
+        }
+
+        [HttpGet("runtime/more/{runtime:int}")]
+        public IActionResult GetMovieByRuntimeMoreThan(int runtime)
+        {
+            // LINQ query, find matching entries for num of stars
+            var entries = _context.Movie.Where(r => r.Runtime > runtime);
+
+            if (entries == null)
+            {
+                return NotFound();
+            }
+            return Ok(entries);
+        }
+
 
         // DELETE: api/movies/name
         [HttpDelete("{name}")]
