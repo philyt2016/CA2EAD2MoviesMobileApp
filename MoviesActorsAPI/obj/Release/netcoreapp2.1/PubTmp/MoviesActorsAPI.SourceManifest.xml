@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <IisApp path="C:\Users\phily\Source\Repos\CA2EAD2MoviesMobileApp5\MoviesActorsAPI\obj\Release\netcoreapp2.1\PubTmp\Out\" />
-  <dbfullsql path="C:\Users\phily\Source\Repos\CA2EAD2MoviesMobileApp5\MoviesActorsAPI\obj\Release\netcoreapp2.1\PubTmp\EFSQLScripts\MoviesContext.sql" />
+  <IisApp path="C:\Users\phily\Source\Repos\CA2EAD2MoviesMobileApp8\MoviesActorsAPI\obj\Release\netcoreapp2.1\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\phily\Source\Repos\CA2EAD2MoviesMobileApp8\MoviesActorsAPI\obj\Release\netcoreapp2.1\PubTmp\EFSQLScripts\MoviesContext.sql" />
 </sitemanifest>

@@ -12644,11 +12644,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\phily\\Source\\Repos\\CA2EAD2MoviesMobileApp7\\MoviesActorsAPI\\MoviesActorsAPI.csproj",
+      "projectUniqueName": "C:\\Users\\phily\\Source\\Repos\\CA2EAD2MoviesMobileApp8\\MoviesActorsAPI\\MoviesActorsAPI.csproj",
       "projectName": "MoviesActorsAPI",
-      "projectPath": "C:\\Users\\phily\\Source\\Repos\\CA2EAD2MoviesMobileApp7\\MoviesActorsAPI\\MoviesActorsAPI.csproj",
+      "projectPath": "C:\\Users\\phily\\Source\\Repos\\CA2EAD2MoviesMobileApp8\\MoviesActorsAPI\\MoviesActorsAPI.csproj",
       "packagesPath": "C:\\Users\\phily\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\phily\\Source\\Repos\\CA2EAD2MoviesMobileApp7\\MoviesActorsAPI\\obj\\",
+      "outputPath": "C:\\Users\\phily\\Source\\Repos\\CA2EAD2MoviesMobileApp8\\MoviesActorsAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
